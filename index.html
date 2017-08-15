@@ -17,7 +17,7 @@
          <li><a href="contacts.html">Контакты</a></li>
        </ul>
        <ul class="user-nav">
-         <li><a href="#">Вход</a></li>
+         <li><a class="login-link" href="#">Вход</a></li>
        </ul>
      </nav>
    </header>
@@ -25,33 +25,33 @@
     <main class="container">
       <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
       <section class="features">
-       <h2 class="visually-hidden">Преимущества</h2>
-       <ul class="features-list">
-         <li class="feature-item">
-           <h2>Быстро</h2>
-           <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - обладатель стильной стрижки-минутки!</p>
-         </li>
-         <li class="feature-item">
-           <h2>Круто</h2>
-           <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
-         </li>
-         <li class="feature-item">
-           <h2>Дорого</h2>
-           <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
-         </li>
-       </ul>
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="features-list">
+          <li class="feature-item">
+            <b>Быстро</b>
+            <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - обладатель стильной стрижки-минутки!</p>
+          </li>
+          <li class="feature-item">
+            <b>Круто</b>
+            <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+          </li>
+          <li class="feature-item">
+            <b>Дорого</b>
+            <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+          </li>
+        </ul>
       </section> <!--      конец секции features-->
       
       <section class="news">
-       <h2>Новости</h2>
+        <h2>Новости</h2>
         <ul class="news-list">
           <li class="news-item">
             <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-            <time datetime="2017-01-11">11 января</time>
+            <time datetime="2016-01-11">11 января</time>
           </li>
           <li class="news-item">
             <p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-            <time datetime="2017-01-16">16 января</time>
+            <time datetime="2016-01-16">16 января</time>
           </li>
         </ul>
         <a class="button" href="news.html">Все новости</a>
@@ -62,8 +62,8 @@
         <figure class="gallery-content">
           <a href="#"><img src="img/studio.jpg" alt="Интерьер Барбершопа" width="286" height="164"></a>
         </figure>
-        <span class="button gallery-button gallery-button-back"></span>
-        <span class="button gallery-button gallery-button-next"></span>
+        <button class="button gallery-button gallery-button-back">Назад</button>
+        <button class="button gallery-button gallery-button-next">Вперед</button>
       </section> <!--      конец секции gallery-->
       
       <section class="contacts">
@@ -84,24 +84,24 @@
       <section class="appointment">
         <h2>Записаться</h2>
         <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-           <p class="appointment-item">
-            <label for="data">Дата</label>
-            <input type="text" name="data" id="data" placeholder="08.10.2017">
-          </p>
-           <p class="appointment-item">
-            <label for="time">Время</label>
-            <input type="text" name="time" id="time" placeholder="10:00">
-          </p>
-           <p class="appointment-item">
-            <label for="name">Ваше имя</label>
-            <input type="text" name="name" id="name" placeholder="Борода">
-          </p>
-           <p class="appointment-item">
-            <label for="phone">Телефон</label>
-            <input type="text" name="phonr" id="phone" placeholder="+7 123 456-78-90">
-          </p>
-          <button class="button" type="submit">Отправить</button>
+        <form class="appointment-form" action="https://echo.htmlacadaemy.ru" method="post">
+           <div class="appointment-item">
+             <label for="data">Дата</label>
+             <input type="text" name="data" id="data" value="" placeholder="08.10.2017">
+           </div>
+           <div class="appointment-item">
+             <label for="time">Время</label>
+             <input type="text" name="time" id="time" value="" placeholder="10:00">
+           </div>
+           <div class="appointment-item">
+             <label for="name">Ваше имя</label>
+             <input type="text" name="name" id="name" value="" placeholder="Борода">
+           </div>
+           <div class="appointment-item">
+             <label for="phone">Телефон</label>
+             <input type="text" name="phonr" id="phone" value="" placeholder="+7 123 456-78-90">
+           </div>
+           <button class="button" type="submit">Отправить</button>
         </form>
       </section> <!--      конец секции appointment-->
       
@@ -134,14 +134,14 @@
         <h2>Личный кабинет</h2>
         <p>Введите свой логин и пароль</p>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <p><input class="login-icon-user" type="text" name="login" placeholder="Логин"></p>
-          <p><input class="login-icon-password" type="password" name="password" placeholder="Пароль"></p>
+          <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
           
-           <p class="login-password-info">
+          <div class="login-password-info">
             <input type="checkbox" name="remember" id="remember" class="visually-hidden" checked>
             <label for="remember">Запомните меня</label>
             <a class="restore" href="#">Я забыл пароль!</a>
-          </p>
+          </div>
           
           <button class="button" type="submit">Войти</button>
         </form>
